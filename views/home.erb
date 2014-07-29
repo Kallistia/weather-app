@@ -1,0 +1,27 @@
+<style>  
+	body {background: url('http://cl.ly/image/1N1v0h1J3r3e/map.png') no-repeat center center fixed;
+    background-size:cover;
+	color:PowderBlue;}
+input {
+ 	background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: grey;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
+input:hover {
+    border: none;
+    background:powderblue;
+    box-shadow: 0px 0px 1px #777;
+}
+
+</style>
+<form method="post" action="/weather">
+    <h1>What's the forecast say?<br>Give me a city, zip code, or landmark:</h1> <input type="text" name="post[location]" />
+    <input type="submit" name="Search" />
+</form>
